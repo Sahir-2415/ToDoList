@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.navbar h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 25px;
+}
