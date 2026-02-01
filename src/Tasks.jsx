@@ -1,11 +1,16 @@
 import React from 'react'
 
-function Tasks({task}) {
+function Tasks({task,index,deleteTask,endTask}) {
   return (
-    <div className='taskitem'>
-      <span>{task}</span>
-      <span>❌</span>
+    <>
+    <div className={`taskitem ${task.completed ? "completed":""}`}>
+    <button className='tick' onClick={()=>endTask(index)}>
+      ✅
+    </button>
+    <span>{task.text}</span>
+    <button className='remove' onClick={()=>deleteTask(index)}>❌</button>
     </div>
+    </>
   )
 }
 

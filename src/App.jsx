@@ -12,16 +12,33 @@ function App() {
       return;
     }
     else{
-      setTask([...tasks,taskText])
-      // set the task array that is in useState with the value 
+      setTask([...tasks,{text:taskText,completed:false}])
+      // set thea task array that is in useState with the value 
     }
   }
+  function deleteTask(indexToRemove){
+      setTask(tasks.filter((tasks,index)=>index!==indexToRemove))
+  }
+
+  function endTask(index){
+    setTask(
+      tasks.map((task,i)=>{
+        return i===index?{...task,completed:!task.completed}:task
+      })
+      
+    )
+  }
+
   return (
     <>
-      <Navbar></Navbar>
+    <Navbar></Navbar>
+    <div className="container-box">
+      
       <SearchBar addTask={addTask}></SearchBar>
       {/* a prop addTask is given to search bar and inside it is the addTask function */}
-      <TaskList tasks={tasks}></TaskList>
+      <TaskList tasks={tasks} deleteTask={deleteTask} endTask={endTask}></TaskList>
+    </div>
+      
     </>
   )
 }

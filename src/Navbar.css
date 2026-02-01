@@ -2,13 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #778873;
+    background-color: #6b4acd;
+    margin-bottom: 30px;
 }
 .navbar h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(5, 5, 5);
+    font-style: italic;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 25px;
 }

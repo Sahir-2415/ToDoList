@@ -6,6 +6,7 @@
     /* align-items: center;*/
 }
 input{
+  width: 400px;
   padding: 10px;
   margin-right: 30px;
 }

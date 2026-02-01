@@ -11,6 +11,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: #f9f9f9;
 }
 
 h1 {
@@ -48,4 +49,44 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/* .remove{
+  background-color: white;
+} */
+.taskitem{
+  margin-left:400px;
+  width: 600px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7baec;
+  padding:8px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: 2px dotted black;
+  transition: all 0.3s ease;
+}
+.taskitem:hover{
+  background-color: white;
+  color: #6467a3;
+  cursor: pointer;
+}
+.tick{
+  background: #1f1f1f;
+  color: #3cff9a;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.taskitem.completed{
+  filter: blur(1.0px);
+  opacity: 0.7;
+}
+.completed span{
+  text-decoration: line-through;
 }
