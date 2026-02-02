@@ -4,4 +4,6 @@ BEST WAY TO LOOK AND REVISE THE PROJECT >
 3.TASKLIST.JSX
 4.TASK.JSX
 
-This time i added the tick mark at the left of each task therefore i made the task string into an object with a completed feature that will tell if it is completed or not , called the completed function in task.jsx , tasklist.jsx and wrote it in app.jsx 
+This time i added the tick mark at the left of each task therefore i made the task string into an object with a completed feature that will tell if it is completed or not , called the completed function in task.jsx , tasklist.jsx and wrote it in app.jsx
+
+HOW WE ADDED A CARD ON CLICK THAT SHOWS ADDED AND DEADLINE IS DIFFICULT TO UNDERSTAND , I AM STILL NOT GETTING IT

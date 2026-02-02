@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Tasks({task,index,deleteTask,endTask}) {
+function Tasks({task,index,deleteTask,endTask,onTaskClick}) {
   return (
     <>
-    <div className={`taskitem ${task.completed ? "completed":""}`}>
-    <button className='tick' onClick={()=>endTask(index)}>
+    <div className={`taskitem ${task.completed ? "completed":""}`} onClick={()=>onTaskClick(task)}>
+    <button className='tick' onClick={(e)=>{e.stopPropagation();endTask(index)}}>
       ✅
     </button>
     <span>{task.text}</span>
-    <button className='remove' onClick={()=>deleteTask(index)}>❌</button>
+    <button className='remove' onClick={(e)=>{e.stopPropagation();deleteTask(index)}}>❌</button>
     </div>
     </>
   )
