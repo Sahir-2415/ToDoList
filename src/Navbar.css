@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,5 +12,31 @@
     font-style: italic;
     font-weight: bold;
     /* text-decoration: underline; */
-    font-size: 25px;
+    /* font-size: 25px; */
+/* } */ 
+
+/* .navbar {
+  height: 60px;
+  background-color: #6b4acd;
+}
+
+.navbar h2 {
+  color: white;
+  font-style: normal;
+  font-size: 22px;
+} */
+.navbar {
+  height: 60px;
+  background-color: #6b4acd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
 }

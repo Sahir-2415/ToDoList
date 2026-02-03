@@ -34,13 +34,14 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <div className="container-box">
-      
+    <div className="app-wrapper">
+      <div className="app-card">
       <SearchBar addTask={addTask}></SearchBar>
       {/* a prop addTask is given to search bar and inside it is the addTask function */}
       <TaskList tasks={tasks} deleteTask={deleteTask} endTask={endTask} onTaskClick={setSelectedTask}></TaskList>
+      </div>
+      </div>
       <TaskDetails task={selectedTask} onClose={()=>setSelectedTask(null)}/>
-    </div>
       
     </>
   )

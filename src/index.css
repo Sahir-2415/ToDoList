@@ -1,4 +1,4 @@
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -53,7 +53,7 @@ button:focus-visible {
 /* .remove{
   background-color: white;
 } */
-.taskitem{
+/* .taskitem{
   margin-left:400px;
   width: 600px;
   margin-top: 40px;
@@ -104,4 +104,159 @@ button:focus-visible {
   padding: 20px;
   border-radius: 12px;
   width: 300px;
+}
+.app-wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.app-card{ */
+  /* width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+/* } */ 
+/*  */
+
+
+/* =========================
+   Global Reset & Base
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+  background: #f4f5ff;
+  color: #333;
+}
+
+/* =========================
+   App Layout
+========================= */
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.app-card {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Task List
+========================= */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================
+   Task Item
+========================= */
+
+.taskitem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #f3f4ff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.taskitem:hover {
+  background: #e9eaff;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* =========================
+   Task States
+========================= */
+
+.taskitem.completed {
+  background: #f1f1f1;
+  opacity: 0.7;
+}
+
+.taskitem.completed .task-text {
+  text-decoration: line-through;
+}
+
+/* =========================
+   Task Buttons
+========================= */
+
+.tick {
+  background: #e9fff2;
+  color: #2ecc71;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.remove {
+  background: #ffecec;
+  color: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-left:auto;
+}
+
+/* =========================
+   Task Details Modal
+========================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card button {
+  margin-top: 12px;
+  background: #6b4acd;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
 }

@@ -7,7 +7,7 @@ function Tasks({task,index,deleteTask,endTask,onTaskClick}) {
     <button className='tick' onClick={(e)=>{e.stopPropagation();endTask(index)}}>
       ✅
     </button>
-    <span>{task.text}</span>
+    <span className='class-text'>{task.text}</span>
     <button className='remove' onClick={(e)=>{e.stopPropagation();deleteTask(index)}}>❌</button>
     </div>
     </>
